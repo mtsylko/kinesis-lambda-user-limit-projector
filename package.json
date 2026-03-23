@@ -1,0 +1,23 @@
+{
+  "name": "kinesis_test_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "invoke:local": "npm run build && node scripts/invoke-local.js"
+  },
+  "author": "Maxim Tsylko",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.896.0",
+    "@aws-sdk/lib-dynamodb": "^3.896.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
