@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+coverage/
+
+.env
+
+lambda.zip
+*.log
+npm-debug.log*
+
+.idea/
+*.iml
+.DS_Store
